@@ -17,8 +17,8 @@ COPY . .
 EXPOSE 5000
 
 # Переменные окружения для Flask
-#ENV FLASK_APP=app.py
-#ENV FLASK_ENV=production
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=production
 
 # Команда для запуска приложения
 CMD ["flask", "run", "--host=0.0.0.0"]
